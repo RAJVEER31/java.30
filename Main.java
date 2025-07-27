@@ -11,8 +11,8 @@ public class Main {
             System.out.println();
         }
     }
-    public boolean solnqueens(int board[][], int col) {
-        if (col > N) {
+    public static boolean solnqueens(int board[][], int col) {
+        if (col == N) {
             return true;
         }
         for (int i = 0; i < N; i++) {
@@ -32,7 +32,7 @@ public class Main {
         }
         return false;
     }
-    static boolean solnq(){
+    public static boolean solnq(){
         int board[][] = {{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
         if (solnqueens(board,0) == false) {
             System.out.println("solution does not exist");
